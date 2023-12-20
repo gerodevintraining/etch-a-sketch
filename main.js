@@ -83,6 +83,7 @@ colorButton.addEventListener("click", (e) => {
 rainbowButton.addEventListener("click", (e) => {
     removeActiveClass();
     e.target.classList.add("active");
+    eraser = false;
 })
 
 eraserButton.addEventListener("click", (e) => {
