@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Etch-a-sketch</title>
+    </head>
+
+    <body>
+        <div class="content-container">
+            <p class="title">ETCH-A-SKETCH</p>
+            <div class="etch-a-sketch">
+            </div>
+            <menu>
+                <li><input type="color" class="color-picker" value="#000000"></li>
+                <li><button type="button" class="color menu-buttons">Color</button></li>
+                <li><button type="button" class="rainbow menu-buttons">Rainbow</button></li>
+                <li><button type="button" class="eraser menu-buttons">Eraser</button></li>
+                <li><button type="button" class="clear menu-buttons">Clear</button></li>
+                <li>
+                    <div class="grid-selection-container">
+                        <p class="current-size"></p>
+                        <input id="grid-size" type="range" value="32" min="3" max="64">
+                    </div>
+                </li>
+            </menu>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

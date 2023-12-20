@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ff5c5c;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+input, button {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 48px;
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+}
+
+menu {
+    user-select: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+}
+
+.menu-buttons {
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    font-family: "Pixelify Sans", 'Times New Roman', Times, serif, sans-serif;
+}
+
+.color-picker {
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    width: 80px;
+}
+
+.etch-a-sketch {
+    background-color: white;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    border: 2px solid black;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.square {
+    border: 0.5px solid black;
+    flex: 1 1 0;
+    background-color: transparent;
+    user-select: none;
+}
+
+.grid-selection-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-size {
+    text-align: center;
+    color: white;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 710px) {
+    .etch-a-sketch {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .etch-a-sketch {
+        width: 350px;
+        height: 350px;
+    }
+}
